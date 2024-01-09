@@ -124,6 +124,18 @@ public final class InitClient {
 		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_6_ODD, RenderRailwaySign::new);
 		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_7_EVEN, RenderRailwaySign::new);
 		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_7_ODD, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_2_EVEN, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_2_ODD, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_3_EVEN, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_3_ODD, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_4_EVEN, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_4_ODD, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_5_EVEN, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_5_ODD, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_6_EVEN, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_6_ODD, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_7_EVEN, RenderRailwaySign::new);
+		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.RAILWAY_SIGN_BOTTOM_7_ODD, RenderRailwaySign::new);
 		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.ROUTE_SIGN_STANDING_LIGHT, RenderRouteSign::new);
 		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.ROUTE_SIGN_STANDING_METAL, RenderRouteSign::new);
 		RegistryClient.registerBlockEntityRenderer(BlockEntityTypes.ROUTE_SIGN_WALL_LIGHT, RenderRouteSign::new);
