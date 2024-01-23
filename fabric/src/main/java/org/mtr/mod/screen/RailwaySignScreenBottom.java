@@ -185,7 +185,7 @@ public class RailwaySignScreenBottom extends ScreenExtension implements IGui {
 
 		for (int i = 0; i < signIds.length; i++) {
 			if (signIds[i] != null) {
-				RenderRailwaySignBottom.drawSign(graphicsHolder, null, signPos, signIds[i], (width - SIGN_SIZE * length) / 2F + i * SIGN_SIZE, 0, SIGN_SIZE, RenderRailwaySign.getMaxWidth(signIds, i, false), RenderRailwaySign.getMaxWidth(signIds, i, true), selectedIds, Direction.UP, 0, (textureId, x, y, size, flipTexture) -> {
+				RenderRailwaySignBottom.drawSign(graphicsHolder, null, signPos, signIds[i], (width - SIGN_SIZE * length) / 2F + i * SIGN_SIZE, 0, SIGN_SIZE, RenderRailwaySignBottom.getMaxWidth(signIds, i, false), RenderRailwaySignBottom.getMaxWidth(signIds, i, true), selectedIds, Direction.UP, 0, (textureId, x, y, size, flipTexture) -> {
 					final GuiDrawing guiDrawing = new GuiDrawing(graphicsHolder);
 					guiDrawing.beginDrawingTexture(textureId);
 					guiDrawing.drawTexture(x, y, x + size, y + size, flipTexture ? 1 : 0, 0, flipTexture ? 0 : 1, 1);
