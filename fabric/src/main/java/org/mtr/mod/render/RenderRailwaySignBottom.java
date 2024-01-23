@@ -87,7 +87,7 @@ public class RenderRailwaySignBottom<T extends BlockRailwaySignBottom.BlockEntit
 			final int newBackgroundColor = backgroundColor | ARGB_BLACK;
 			RenderTrains.scheduleRender(new Identifier(Init.MOD_ID, "textures/block/white.png"), false, RenderTrains.QueuedRenderLayer.LIGHT, (graphicsHolderNew, offset) -> {
 				storedMatrixTransformations.transform(graphicsHolderNew, offset);
-				IDrawing.drawTexture(graphicsHolderNew, 0, 0, SMALL_OFFSET, 0.5F * (signIds.length), 0.5F, SMALL_OFFSET, facing, newBackgroundColor, MAX_LIGHT_GLOWING);
+				IDrawing.drawTexture(graphicsHolderNew, 0, 4, SMALL_OFFSET, 0.5F * (signIds.length), 0.5F, SMALL_OFFSET, facing, newBackgroundColor, MAX_LIGHT_GLOWING);
 				graphicsHolderNew.pop();
 			});
 		}
@@ -108,7 +108,7 @@ public class RenderRailwaySignBottom<T extends BlockRailwaySignBottom.BlockEntit
 						backgroundColor | ARGB_BLACK,
 						(textureId, x, y, size, flipTexture) -> RenderTrains.scheduleRender(textureId, true, RenderTrains.QueuedRenderLayer.LIGHT_TRANSLUCENT, (graphicsHolderNew, offset) -> {
 							storedMatrixTransformations.transform(graphicsHolderNew, offset);
-							IDrawing.drawTexture(graphicsHolderNew, x, y, size, size, flipTexture ? 1 : 0, 0, flipTexture ? 0 : 1, 1, facing, -1, MAX_LIGHT_GLOWING);
+							IDrawing.drawTexture(graphicsHolderNew, x, 4, size, size, flipTexture ? 1 : 0, 0, flipTexture ? 0 : 1, 1, facing, -1, MAX_LIGHT_GLOWING);
 							graphicsHolderNew.pop();
 						})
 				);
@@ -162,7 +162,7 @@ public class RenderRailwaySignBottom<T extends BlockRailwaySignBottom.BlockEntit
 					storedMatrixTransformations.transform(graphicsHolderNew, offset);
 					graphicsHolderNew.translate(x + margin + (flipCustomText ? signSize : 0), y + margin, 0);
 					graphicsHolderNew.scale(Math.min(1, maxWidth / exitWidth), 1, 1);
-					IDrawing.drawTexture(graphicsHolderNew, 4, 16, signSize, 16, facing, MAX_LIGHT_GLOWING);
+					IDrawing.drawTexture(graphicsHolderNew, signOffset, 0, signSize, signSize, facing, MAX_LIGHT_GLOWING);
 					graphicsHolderNew.pop();
 				});
 
