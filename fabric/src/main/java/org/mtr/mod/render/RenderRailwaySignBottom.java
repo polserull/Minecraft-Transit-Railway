@@ -276,7 +276,7 @@ public class RenderRailwaySignBottom<T extends BlockRailwaySignBottom.BlockEntit
 	}
 
 	private static void renderCustomText(String signText, StoredMatrixTransformations storedMatrixTransformations, Direction facing, float size, float start, boolean flipCustomText, float maxWidth, int backgroundColor) {
-		final DynamicTextureCache.DynamicResource dynamicResource = DynamicTextureCache.instance.getSignText(signText, flipCustomText ? HorizontalAlignment.RIGHT : HorizontalAlignment.LEFT, (1 - BlockRailwaySign.SMALL_SIGN_PERCENTAGE) / 2, backgroundColor, ARGB_WHITE);
+		final DynamicTextureCache.DynamicResource dynamicResource = DynamicTextureCache.instance.getSignText(signText, flipCustomText ? HorizontalAlignment.RIGHT : HorizontalAlignment.LEFT, (1 - BlockRailwaySignBottom.SMALL_SIGN_PERCENTAGE) / 2, backgroundColor, ARGB_WHITE);
 		final float width = Math.min(size * dynamicResource.width / dynamicResource.height, maxWidth);
 		RenderTrains.scheduleRender(dynamicResource.identifier, true, RenderTrains.QueuedRenderLayer.LIGHT_TRANSLUCENT, (graphicsHolderNew, offset) -> {
 			storedMatrixTransformations.transform(graphicsHolderNew, offset);
