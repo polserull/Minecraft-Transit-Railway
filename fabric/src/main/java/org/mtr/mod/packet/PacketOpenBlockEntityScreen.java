@@ -34,6 +34,8 @@ public final class PacketOpenBlockEntityScreen extends PacketHandler {
 				IPacket.openScreen(new TrainBasicSensorScreen(blockPos), screenExtension -> screenExtension instanceof TrainBasicSensorScreen);
 			} else if (blockEntity.data instanceof BlockRailwaySign.BlockEntity) {
 				IPacket.openScreen(new RailwaySignScreen(blockPos), screenExtension -> screenExtension instanceof RailwaySignScreen);
+			} else if (blockEntity.data instanceof BlockRailwaySignBottom.BlockEntity) {
+				IPacket.openScreen(new RailwaySignScreenBottom(blockPos), screenExtension -> screenExtension instanceof RailwaySignScreenBottom);
 			} else if (blockEntity.data instanceof BlockLiftTrackFloor.BlockEntity) {
 				IPacket.openScreen(new LiftTrackFloorScreen(blockPos), screenExtension -> screenExtension instanceof LiftTrackFloorScreen);
 			}
