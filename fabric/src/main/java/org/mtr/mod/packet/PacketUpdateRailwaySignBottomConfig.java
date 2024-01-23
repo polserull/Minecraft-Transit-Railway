@@ -12,7 +12,7 @@ public final class PacketUpdateRailwaySignBottomConfig extends PacketHandler {
 	private final LongAVLTreeSet selectedIds;
 	private final String[] signIds;
 
-	public PacketUpdateRailwaySignConfig(PacketBuffer packetBuffer) {
+	public PacketUpdateRailwaySignBottomConfig(PacketBuffer packetBuffer) {
 		blockPos = packetBuffer.readBlockPos();
 		final int selectedIdsLength = packetBuffer.readInt();
 		selectedIds = new LongAVLTreeSet();
@@ -27,7 +27,7 @@ public final class PacketUpdateRailwaySignBottomConfig extends PacketHandler {
 		}
 	}
 
-	public PacketUpdateRailwaySignConfig(BlockPos blockPos, LongAVLTreeSet selectedIds, String[] signIds) {
+	public PacketUpdateRailwaySignBottomConfig(BlockPos blockPos, LongAVLTreeSet selectedIds, String[] signIds) {
 		this.blockPos = blockPos;
 		this.selectedIds = selectedIds;
 		this.signIds = signIds;
