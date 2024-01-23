@@ -84,7 +84,7 @@ public final class Blocks {
 		RAILWAY_SIGN_7_EVEN = Registry.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "railway_sign_7_even"), () -> new Block(new BlockRailwaySign(7, false)), CreativeModeTabs.RAILWAY_FACILITIES);
 		RAILWAY_SIGN_7_ODD = Registry.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "railway_sign_7_odd"), () -> new Block(new BlockRailwaySign(7, true)), CreativeModeTabs.RAILWAY_FACILITIES);
 		RAILWAY_SIGN_MIDDLE = Registry.registerBlock(new Identifier(Init.MOD_ID, "railway_sign_middle"), () -> new Block(new BlockRailwaySign(0, false)));
-		RAILWAY_SIGN_BOTTOM_2_EVEN = Registry.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "railway_sign_bottom_2_even"), () -> new Block(new BlockRailwaySignBottom(2, false)), CreativeModeTabs.RAILWAY_FACILITIES);
+		RAILWAY_SIGN_BOTTOM_2_EVEN = Registry.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "railway_sign_bottom_2_even"), () -> new Block(new BlockRailwaySign(2, false)), CreativeModeTabs.RAILWAY_FACILITIES); // OK
 		RAILWAY_SIGN_BOTTOM_2_ODD = Registry.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "railway_sign_bottom_2_odd"), () -> new Block(new BlockRailwaySignBottom(2, true)), CreativeModeTabs.RAILWAY_FACILITIES);
 		RAILWAY_SIGN_BOTTOM_3_EVEN = Registry.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "railway_sign_bottom_3_even"), () -> new Block(new BlockRailwaySignBottom(3, false)), CreativeModeTabs.RAILWAY_FACILITIES);
 		RAILWAY_SIGN_BOTTOM_3_ODD = Registry.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "railway_sign_bottom_3_odd"), () -> new Block(new BlockRailwaySignBottom(3, true)), CreativeModeTabs.RAILWAY_FACILITIES);
