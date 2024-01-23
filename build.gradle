@@ -1,8 +1,9 @@
+// Built With Love :D
+
 plugins {
 	id "java"
 	id "com.github.johnrengelman.shadow" version "+" apply false
 }
- // :)
 
 group "org.mtr.mod"
 version rootProject.properties.version
