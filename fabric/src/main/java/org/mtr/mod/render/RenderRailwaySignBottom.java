@@ -300,7 +300,7 @@ public class RenderRailwaySignBottom<T extends BlockRailwaySignBottom.BlockEntit
 		float maxWidthLeft = 0;
 		for (int i = index + (right ? 1 : -1); right ? i < signIds.length : i >= 0; i += (right ? 1 : -1)) {
 			if (signIds[i] != null) {
-				final SignResource sign = RenderRailwaySign.getSign(signIds[i]);
+				final SignResource sign = RenderRailwaySignBottom.getSign(signIds[i]);
 				if (sign != null && sign.hasCustomText && right == sign.getFlipCustomText()) {
 					maxWidthLeft /= 2;
 				}
