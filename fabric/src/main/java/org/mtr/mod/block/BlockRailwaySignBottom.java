@@ -90,10 +90,10 @@ public class BlockRailwaySignBottom extends BlockExtension implements IBlock, Di
 	public VoxelShape getOutlineShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
 		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
 		if (state.isOf(org.mtr.mod.Blocks.RAILWAY_SIGN_MIDDLE.get())) {
-			return IBlock.getVoxelShapeByDirection(0, 0, 7, 16, 12, 9, facing);
+			return IBlock.getVoxelShapeByDirection(0, 7, 7, 16, 16, 9, facing);
 		} else {
 			final int xStart = getXStart();
-			final VoxelShape main = IBlock.getVoxelShapeByDirection(xStart - 0.75, 6, 7, 16, 12, 9, facing);
+			final VoxelShape main = IBlock.getVoxelShapeByDirection(xStart - 0.75, 7, 7, 16, 16, 9, facing);
 			final VoxelShape pole = IBlock.getVoxelShapeByDirection(xStart - 2, 0, 7, xStart - 0.75, 16, 9, facing);
 			return VoxelShapes.union(main, pole);
 		}
@@ -109,6 +109,7 @@ public class BlockRailwaySignBottom extends BlockExtension implements IBlock, Di
 	public void addTooltips(ItemStack stack, @Nullable BlockView world, List<MutableText> tooltip, TooltipContext options) {
 		tooltip.add(TextHelper.translatable("tooltip.mtr.railway_sign_length", length).formatted(TextFormatting.GRAY));
 		tooltip.add(TextHelper.translatable(isOdd ? "tooltip.mtr.railway_sign_odd" : "tooltip.mtr.railway_sign_even").formatted(TextFormatting.GRAY));
+		tooltip.add(TextHelper.translatable("Type: Bottom").formatted(TextFormatting.GRAY));
 	}
 
 	@Nonnull
