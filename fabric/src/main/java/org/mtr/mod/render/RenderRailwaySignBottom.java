@@ -87,7 +87,7 @@ public class RenderRailwaySignBottom<T extends BlockRailwaySignBottom.BlockEntit
 			final int newBackgroundColor = backgroundColor | ARGB_BLACK;
 			RenderTrains.scheduleRender(new Identifier(Init.MOD_ID, "textures/block/white.png"), false, RenderTrains.QueuedRenderLayer.LIGHT, (graphicsHolderNew, offset) -> {
 				storedMatrixTransformations.transform(graphicsHolderNew, offset);
-				IDrawing.drawTexture(graphicsHolderNew, 0, 0, SMALL_OFFSET, 0.5F * (signIds.length), -0.5F, SMALL_OFFSET, facing, newBackgroundColor, MAX_LIGHT_GLOWING);
+				IDrawing.drawTexture(graphicsHolderNew, 0, 0.5F, SMALL_OFFSET, 0.5F * (signIds.length), -0.5F, SMALL_OFFSET, facing, newBackgroundColor, MAX_LIGHT_GLOWING);
 				graphicsHolderNew.pop();
 			});
 		}
